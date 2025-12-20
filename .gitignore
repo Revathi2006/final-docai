@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+venv/
+.env
+
+# Databases / AI
+chroma_db/
+
+# Folders not needed
+doc-ai-app/
+pdf-qa-app/
+
+# Editor files
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
