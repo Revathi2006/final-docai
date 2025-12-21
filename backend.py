@@ -507,5 +507,8 @@ async def test_dictionary(word: str):
     }
 
 if __name__ == "__main__":
+    import os
     import uvicorn
-    uvicorn.run("backend:app", host="127.0.0.1", port=5500, reload=True)
+
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("backend:app", host="0.0.0.0", port=port)
